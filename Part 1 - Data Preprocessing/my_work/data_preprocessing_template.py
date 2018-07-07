@@ -24,7 +24,7 @@ imputer = Imputer(missing_values='NaN', strategy='mean', axis=0)
 imputer = imputer.fit(X[:, 1:3])
 X[:, 1:3] = imputer.transform(X[:, 1:3])
 
-# encoding categorical data
+# encoding categorical data 
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
 # encode the country variable
