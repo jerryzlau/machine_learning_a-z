@@ -53,3 +53,18 @@ Omit one of the categorical value, deprive it by doing `1 - D1`
 
 ## Multiple Linear Regression
 ![Multiple Linear Regression](resource/multiple-linear-regression.png)
+
+## Building a Model
+### 5 Methods of building models:
+### 1. All-in
+### 2. Backward Elimination
+1. Select a significance level to stay in the model. (Typically al = 0.05, same as p-value norm)
+2. Fit the Model with all possible predictors
+3. Consider the predictor with the highest p-value. If `p > sl` go to step 4. Otherwise, go to step 7.
+4. Remove the predictor
+5. Update model without the removed predictor.
+6. Go to step 3 again
+7. Model is ready
+### 3. Forward Selection
+### 4. Bidirectional Elimination
+### 5. Score Comparison
